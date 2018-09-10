@@ -1,0 +1,162 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 常用标签演示 - 前端开发仓库</title>
+<meta name="keywords" content="前端开发,Web标准">
+<meta name="description" content="编写HTML时常用到的标签在浏览器下的默认效果。">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<h1>HTML 常用标签演示</h1>
+<h2>【基础】</h2>
+
+<p><strong>&lt;div&gt;</strong> 定义一个显示块</p>
+<p><strong>&lt;span&gt;</strong> 定一个行内显示块</p>
+
+我们知道，网页是从上到下浏览的。 <br/>
+块级元素： 在一个网页中，有些元素自己占了一行（图片、文本段、视频等等）；这些元素就是块级的元素<br/>
+行内元素：有些元素是在一行内展示的。这些元素就是行内元素，比如：（按钮、输入框等）。 <br/>
+
+<hr>
+
+<p><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> 定义标题</p>
+<h1>H1 标题</h1>
+<h2>H2 标题</h2>
+<h3>H3 标题</h3>
+<h4>H4 标题</h4>
+<h5>H5 标题</h5>
+<h6>H6 标题</h6>
+
+<hr>
+
+<p><strong>&lt;p&gt;</strong> 定义段落</p>
+
+<hr>
+
+<p><strong>&lt;hr&gt;</strong> 定义水平线</p>
+
+<hr>
+
+
+<h2>【列表】</h2>
+
+<p><strong>&lt;ul&gt;</strong> 定义一个列表元素</p>
+<ul>
+  <li><strong>&lt;li&gt;</strong> 定义列表的项目</li>
+  <li>张三</li>
+  <li>李四</li>
+</ul>
+
+<hr>
+
+<h2>【表格】</h2>
+
+<p><strong>&lt;table&gt;</strong> 定义表格</p>
+<p><strong>&lt;tr&gt;</strong> 定义表格中的行</p>
+<p><strong>&lt;td&gt;</strong> 定义表格中的单元</p>
+
+<pre>
+&lt;table&gt;
+  &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>张三</td>
+      <td>2009-09-09</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>李四</td>
+      <td>2010-10-10</td>
+    </tr>
+</table>
+
+<hr>
+
+
+
+
+
+<h2>【表单】</h2>
+
+<p><strong>&lt;form&gt;</strong> 定义表单</p>
+
+<hr>
+
+<p><strong>&lt;select&gt;</strong> 定义选择列表（下拉列表、多选列表）</p>
+<p><strong>&lt;option&gt;</strong> 定义选择列表中的选项</p>
+<select>
+  <option>张三</option>
+    <option>张三的儿子</option>
+    <option>张三的孙女</option>
+</select>
+
+<hr>
+
+
+
+<form id="test_form" action="#test_form">
+<p><strong>&lt;input&gt;</strong> 定义输入控件<small>（如果浏览器不支持 HTML5 新的类型，那么会使用文本域替代）</small></p>
+<p>文本域 <code>type="text"</code> <input name="" type="text"></p>
+<p>密码域 <code>type="password"</code> <input name="" type="password"></p>
+<p>复选框 <code>type="checkbox"</code> <input name="" type="checkbox" value="">A <input name="" type="checkbox" value="">B <input name="" type="checkbox" value="">C</p>
+<p>单选按钮 <code>type="radio"</code> 组A:<input name="radio_a" type="radio" value="" checked="checked">① <input name="radio_a" type="radio" value="">②　　组B:<input name="radio_b" type="radio" value="" checked="checked">Ⅰ <input name="radio_b" type="radio" value="">Ⅱ</p>
+<p>普通按钮 <code>type="button"</code> <input name="" type="button" value="无任何作用的按钮"></p>
+
+
+<hr>
+
+<p>
+  <button type="button">普通按钮</button>
+  <button type="reset">重置按钮</button>
+  <button type="submit">提交按钮</button>
+</p>
+</form>
+
+<hr>
+
+<h2>【图像】</h2>
+
+<img src="http://ciaoca.com/logo/88x31.jpg">
+<hr>
+
+<h2> 【链接】</h2>
+<p><strong>&lt;a&gt;</strong> 链接</p>
+<a href='http://adacode.net' target='_blank'> a链接 </a>
+
+
+<hr>
+
+
+<h2>【音频/视频】</h2>
+
+<p><strong>&lt;audio&gt;</strong> 定义声音</p>
+<p><strong>&lt;source&gt;</strong> 定义媒体源</p>
+
+<audio controls="controls">
+您的浏览器不支持 audio 标签
+</audio>
+
+<hr>
+
+<p><strong>&lt;audio&gt;</strong> 定义视频</p>
+<p><strong>&lt;video&gt;</strong> 定义字幕</p>
+<video controls="controls">
+您的浏览器不支持 video 标签
+</video>
+
+<hr>
+
+
+
+</body>
+</html>

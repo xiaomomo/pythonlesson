@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务清单</title>
+</head>
+
+<body>
+
+    {% for todo in todoList %}
+    <p>
+        {{ todo }}
+        <a href="/delete?todo={{todo}}">删除</a>
+    </p>
+    {% endfor %}
+
+    <form action="/insert" method="post">
+        <input type="text" name="todo">
+        <button type="submit">新增</button>
+    </form>
+
+</body>
+
+</html>
+
+
